@@ -1,1 +1,37 @@
-/bin
+# ------------------------
+# .NET build artifacts
+# ------------------------
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# Visual Studio artifacts (in case you open the project in VS)
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider / JetBrains IDE
+.idea/
+*.iml
+
+# ------------------------
+# VS Code
+# ------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
