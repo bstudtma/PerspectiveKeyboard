@@ -18,7 +18,7 @@ A Windows desktop application for sending input events to Microsoft Flight Simul
 ## Build Instructions
 1. Clone the repository:
    ```powershell
-   git clone <repo-url>
+   git clone [<repo-url>](https://github.com/bstudtma/PerspectiveKeyboard.git)
    cd PerspectiveKeyboard
    ```
 2. Build and publish (Release, single file):
