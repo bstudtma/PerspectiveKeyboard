@@ -2,6 +2,8 @@
 
 A Windows desktop application for sending input events to Microsoft Flight Simulator (MSFS) using SimConnect. The app features a simple WPF UI with a toggle switch to enable/disable hotkey input events, and integrates with the SimConnect SDK for communication with MSFS.
 
+This is designed to be used with the Cirrus SR22T's GCU 479.
+
 ## Features
 - WPF UI with modern toggle switch for enabling/disabling hotkey input events
 - Global keyboard hook for hotkey detection
