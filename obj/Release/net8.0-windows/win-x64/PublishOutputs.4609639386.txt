@@ -1,0 +1,2 @@
+D:\code\PerspectiveKeyboard\bin\Release\net8.0-windows\win-x64\publish\PerspectiveKeyboard.pdb
+D:\code\PerspectiveKeyboard\bin\Release\net8.0-windows\win-x64\publish\PerspectiveKeyboard.exe

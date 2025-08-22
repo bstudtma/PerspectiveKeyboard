@@ -1,0 +1,63 @@
+﻿<Window x:Class="PerspectiveKeyboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MSFS Input Event Hotkey" Height="120" Width="220"
+        WindowStartupLocation="CenterScreen"
+        Background="#1b1f25">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+    <!-- Only one row is defined, so use Grid.Row=0 -->
+    <Border Grid.Row="0" Margin="0,8,0,8" HorizontalAlignment="Center" CornerRadius="14"
+                Padding="8" Background="#0f1318">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="OFF" Foreground="#a0aab5" Margin="0,0,6,0" VerticalAlignment="Center"/>
+                <ToggleButton x:Name="PowerSwitch" Width="80" Height="36"
+                              Click="PowerSwitch_Click"
+                              Cursor="Hand">
+                    <ToggleButton.Style>
+                        <Style TargetType="ToggleButton">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ToggleButton">
+                                        <Grid>
+                                            <Border CornerRadius="18" Background="#222a33" BorderBrush="#101418" BorderThickness="2"/>
+                                            <Grid Margin="4">
+                                                <Border x:Name="Knob" CornerRadius="14" Background="#394452" Height="24" Width="24">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect Opacity="0.6" BlurRadius="6" Direction="270" ShadowDepth="1"/>
+                                                    </Border.Effect>
+                                                </Border>
+                                                <TextBlock x:Name="OnText" Text="ON" FontWeight="Bold" VerticalAlignment="Center"
+                                                           HorizontalAlignment="Right" Margin="0,0,4,0" Foreground="#66ff9a" Visibility="Collapsed"/>
+                                                <TextBlock x:Name="OffText" Text="OFF" FontWeight="Bold" VerticalAlignment="Center"
+                                                           HorizontalAlignment="Left"  Margin="4,0,0,0" Foreground="#ff6666" Visibility="Visible"/>
+                                            </Grid>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsChecked" Value="True">
+                                                <Setter TargetName="Knob" Property="HorizontalAlignment" Value="Right"/>
+                                                <Setter TargetName="Knob" Property="Background" Value="#66ff9a"/>
+                                                <Setter TargetName="OnText" Property="Visibility" Value="Visible"/>
+                                                <Setter TargetName="OffText" Property="Visibility" Value="Collapsed"/>
+                                            </Trigger>
+                                            <Trigger Property="IsChecked" Value="False">
+                                                <Setter TargetName="Knob" Property="HorizontalAlignment" Value="Left"/>
+                                                <Setter TargetName="Knob" Property="Background" Value="#ff6666"/>
+                                                <Setter TargetName="OnText" Property="Visibility" Value="Collapsed"/>
+                                                <Setter TargetName="OffText" Property="Visibility" Value="Visible"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ToggleButton.Style>
+                </ToggleButton>
+                <TextBlock Text="ON" Foreground="#a0aab5" Margin="6,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {},
+    ".NETCoreApp,Version=v8.0/win-x64": {
+      "PerspectiveKeyboard/1.0.0": {
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": "8.0.19",
+          "Microsoft.FlightSimulator.SimConnect": "12.2.0.0"
+        },
+        "runtime": {
+          "PerspectiveKeyboard.dll": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/8.0.19": {},
+      "Microsoft.FlightSimulator.SimConnect/12.2.0.0": {
+        "runtime": {
+          "Microsoft.FlightSimulator.SimConnect.dll": {
+            "assemblyVersion": "12.2.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PerspectiveKeyboard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IhHf+zeZiaE5EXRyxILd4qM+Hj9cxV3sa8MpzZgeEhpvaG3a1VEGF6UCaPFLO44Kua3JkLKluE0SWVamS50PlA==",
+      "path": "microsoft.net.illink.tasks/8.0.19",
+      "hashPath": "microsoft.net.illink.tasks.8.0.19.nupkg.sha512"
+    },
+    "Microsoft.FlightSimulator.SimConnect/12.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
